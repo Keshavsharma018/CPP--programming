@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a=34;
+    int *ptra;
+    ptra=&a;
+    std::cout<<"The value of a is "<<a<<endl;
+    std::cout<<"The value of a is"<<*ptra<<endl;
+    std::cout<<"The address of a is "<<&a<<endl;
+    std::cout<<"The address of a is"<<ptra<<endl;
+   
+    
+    
+
+    return 0;
+}
