@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int CP,SP;
+    std::cout<<"The Cost Price is = ";
+    std::cin>>CP;
+    std::cout<<"The Selling Price is = ";
+    std::cin>>SP;
+    if(CP<SP){
+        std::cout<<"Profit is made"<<endl<<"The Profit is ="<<SP-CP;
+    }
+    else{
+        std::cout<<"Loss"<<endl<<"The loss is ="<<CP-SP;
+        
+    }
+    return 0;
+}
