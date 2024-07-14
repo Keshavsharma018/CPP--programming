@@ -9,10 +9,10 @@ std::cin>>b;
 std::cout<<"Enter 3rd side=";
 std::cin>>c;
 if(a+b>c && b+c>a && c+a>b){
-    std::cout<<"These can be the sides of the triangle";
+    std::cout<<"It is a Valid Triangle";
 }
 else{
-    std::cout<<"These can't be the sides of the triangle";
+    std::cout<<"It is not a Valid Triangle";
 }
 return 0;
 }
