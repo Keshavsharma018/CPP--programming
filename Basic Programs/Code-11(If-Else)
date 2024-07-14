@@ -1,17 +1,20 @@
 #include <iostream>
 using namespace std;
-int main() {
-    int CP,SP;
-    std::cout<<"The Cost Price is = ";
-    std::cin>>CP;
-    std::cout<<"The Selling Price is = ";
-    std::cin>>SP;
-    if(CP<SP){
-        std::cout<<"Profit is made"<<endl<<"The Profit is ="<<SP-CP;
-    }
-    else{
-        std::cout<<"Loss"<<endl<<"The loss is ="<<CP-SP;
-        
-    }
+int main()
+{
+int SP,CP;
+std::cout<<"Enter the Cost Price =";
+std::cin>>CP;
+std::cout<<"Enter the Selling Price =";
+std::cin>>SP;
+if(SP>CP){
+    std::cout<<"Profit"<<endl<<"The profit made is ="<<SP-CP;
+}
+else if(SP=CP){
+    std::cout<<"Neither Profit Nor Loss"<<endl;
+}
+else{
+    std::cout<<"Loss"<<endl<<"The Loss is ="<<CP-SP;
+}
     return 0;
 }
