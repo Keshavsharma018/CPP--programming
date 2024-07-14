@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+std::cout<<"Enter 1st side=";
+std::cin>>a;
+std::cout<<"Enter 2nd side=";
+std::cin>>b;
+std::cout<<"Enter 3rd side=";
+std::cin>>c;
+if(a+b>c && b+c>a && c+a>b){
+    std::cout<<"These can be the sides of the triangle";
+}
+else{
+    std::cout<<"These can't be the sides of the triangle";
+}
+return 0;
+}
