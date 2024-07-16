@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+
+    if (n <= 0) {
+        cout << "Invalid input. Number of elements must be positive.";
+        return 1; // Exit the program with error code 1
+    }
+
+    double sum = 0.0;
+    double number;
+
+    cout << "Enter " << n << " numbers:\n";
+    for (int i = 0; i < n; ++i) {
+        cin >> number;
+        sum += number;
+    }
+
+    double average = sum / n;
+    cout << "Average of entered numbers = " << average << endl;
+
+    return 0; // Exit the program successfully
+}
