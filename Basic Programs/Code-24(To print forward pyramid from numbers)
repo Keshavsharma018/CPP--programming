@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i,spaces,numbers,row;
+    cout<<"Enter the no.of rows : ";
+    cin>>row;
+    for(i=1;i<=row;i++){
+        for(spaces=1;spaces<=row-i;spaces++){
+            cout<<"\t";
+        }
+        for(numbers=1;numbers<=2*i-1;numbers++){
+            cout<<numbers<<"\t";
+        }
+        cout<<endl;
+        
+    }
+
+    return 0;
+}
