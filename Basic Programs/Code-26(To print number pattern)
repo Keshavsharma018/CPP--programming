@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int N,row,number=1;
+    
+    cout<<"Enter no. of rows : ";
+    cin>>N;
+    for(row=1;row<=N;row++){
+       for( int i=1;i<=row;i++){
+           cout<<number<<"\t";
+           number = number+1;
+       }
+        cout<<endl;
+    }
+    return 0;
+    }
