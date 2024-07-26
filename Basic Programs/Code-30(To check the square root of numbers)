@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    float ans;
+    cout<<"Enter the number you want to check : ";
+    cin>>n;
+    ans=1;
+    while(ans*ans<=n){
+        ans=ans+0.01;
+    }
+    ans=ans-0.01;
+    cout<<ans;
+
+    return 0;
+}
