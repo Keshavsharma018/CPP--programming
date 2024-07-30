@@ -1,0 +1,24 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,N;
+    cout<<"Enter the term you want to check :";
+    cin>>N;
+    a=0;
+    b=1;
+    c=a+b;
+    for(c=1;c<N;c++){
+        a=b;
+        b=c;
+        c=a+b;
+    }
+    if(c==N){
+        cout<<N<<" is a term of Fibonacci series ";
+    }
+    else{
+        cout<<N<<" is not a term of Fibonacci series ";
+    }
+    return 0;
+}
