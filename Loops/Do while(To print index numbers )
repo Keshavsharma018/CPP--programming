@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int index =45;
+    do{
+        std::cout<<"We are at the index no."<<index<<std::endl;
+        index = index + 1;
+    }while(index<58);
+    
+   
+    return 0;
+}
