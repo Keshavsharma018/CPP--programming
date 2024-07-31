@@ -1,0 +1,24 @@
+
+#include<iostream>
+using namespace std;
+int main (){
+    int number,row,i;
+    cout<<"Enter N : ";
+    cin>>number;
+    
+    for(row=1;row<=number;row++){
+        char ch='A';
+        //1.to print the incresaing order of the alphabets
+        for(i=1;i<=number-row+1;i++){
+            cout<<ch<<"  ";
+            ch++;
+        }
+        ch--;
+        for(i=1;i<=number-row+1;i++){
+            cout<<ch<<"  ";
+            ch--;
+            }
+        cout<<endl;
+    }
+    return 0;
+}
