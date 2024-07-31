@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int N,rows,spaces,stars;
+    cout<<"Enter the value of N : ";
+    cin>>N;
+    for(rows=1;rows<=N;rows++){
+        for(spaces=1;spaces<=N-rows;spaces++){
+            cout<<"  ";
+        }
+        for(stars=1;stars<=2*rows-1;stars++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+    for(rows=N-1;rows>=1;rows--){
+        for(spaces=1;spaces<=N-rows;spaces++){
+            cout<<"  ";
+        }
+        for(stars=1;stars<=2*rows-1;stars++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
