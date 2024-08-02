@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int N,i,no,ans;
+    cout<<"Enter the number of terms :";
+    cin>>N;
+    
+    for(i=1;i<=N;i++){
+        cin>>no;
+        ans^=no;
+    }
+    cout<<"Unique Number : "<<ans;
+    return 0;
+}
