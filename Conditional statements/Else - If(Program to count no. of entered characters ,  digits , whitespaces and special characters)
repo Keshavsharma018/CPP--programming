@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    int digits = 0, whitespaces = 0, characters = 0, special = 0;
+
+    ch = cin.get(); // Read the first character
+    while (ch != '$') { // Continue reading until '$' is encountered
+        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+            characters++; // Count alphabetic characters
+        } else if (ch >= '0' && ch <= '9') {
+            digits++; // Count digits
+        } else if (ch == ' ' || ch == '\t' || ch == '\n') {
+            whitespaces++; // Count whitespace characters
+        } else {
+            special++; // Count any other special characters
+        }
+        ch = cin.get(); // Read the next character
+    }
+
+    // Output the counts
+    cout << "Total characters: " << characters << endl;
+    cout << "Total digits: " << digits << endl;
+    cout << "Total whitespaces: " << whitespaces << endl;
+    cout << "Total specials: " << special << endl;
+    
+    return 0;
+}
