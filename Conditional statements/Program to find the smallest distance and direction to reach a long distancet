@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main (){
+    int x=0 , y=0;
+    char ch;
+    ch=cin.get();
+    while(ch!='\n'){
+        if(ch=='E')x++;
+        else if(ch=='N')y++;
+        else if(ch=='S')y--;
+        else if(ch=='W')x--;
+        
+        ch=cin.get();
+    }
+    cout<<x<<","<<y<<endl;
+   if(x>=0){
+      //print x times E
+      for(int i=1;i<=x;i++){
+          cout<<"E";
+      }
+   }
+   //print the N and S direction 
+   if(y>=0){
+       //print y times N
+       for(int i=1;i<=y;i++){
+           cout<<"N";
+       }
+   }
+   else{
+       //print |Y| times S
+       y=y*-1;
+       for(int i=1;i<=y;y++){
+           cout<<"S";
+       }
+   }
+   if(x<=0){
+       x=x*-1;
+       for(int i=1;i<=x;i++){
+           cout<<"W";
+       }
+   }
+ return 0;   
+}
