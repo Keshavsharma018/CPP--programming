@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a[]={1,2,3,4,5},i,n=5;
+    for(i=0;i<n;i++){
+        cout<<a[i]<<" ";
+        }
+        cout<<endl;
+        int key,indx=-1;
+        cin>>key;
+        for(i=0;i<n;i++){
+            if(key==a[i]){
+            indx=i;
+            break;
+        }
+        }
+        cout<<indx;
+        return 0;
+}]
